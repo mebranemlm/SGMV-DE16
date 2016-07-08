@@ -1,0 +1,44 @@
+sect_id;sect_nomb; sect_esta;audi_freg; audi_fact;user_id;tram_id
+1;Ov. Chancay;A;now();now();NULL;1
+2;Los Tilos;A;now();now();NULL;1
+3;Torre Blanca;A;now();now();NULL;1
+4;Lechón Dorado;A;now();now();NULL;1
+5;Quepepampa;A;now();now();NULL;1
+6;Curva Zapata;A;now();now();NULL;1
+7;Donoso;A;now();now();NULL;1
+8;Curva Esquivel;A;now();now();NULL;1
+9;Huaral;A;now();now();NULL;1
+10;Dv. Variante Pasamayo;A;now();now();NULL;2
+11;Aucallama;A;now();now();NULL;2
+12;Puente Chancay;A;now();now();NULL;2
+13;San Cristobal;A;now();now();NULL;2
+14;Macatón;A;now();now();NULL;2
+15;Boza;A;now();now();NULL;2
+16;La Huaca;A;now();now();NULL;2
+17;Jesus del Valle;A;now();now();NULL;2
+18;Huaral;A;now();now();NULL;2
+19;Esperanza Baja;A;now();now();NULL;3
+20;Esperanza Alta;A;now();now();NULL;3
+21;Sector Tres;A;now();now();NULL;3
+22;Hornillos;A;now();now();NULL;3
+23;Cuyo;A;now();now();NULL;3
+24;Lumbra;A;now();now();NULL;3
+25;Santo Domingo;A;now();now();NULL;3
+26;San Miguel;A;now();now();NULL;3
+27;Totoral;A;now();now();NULL;3
+28;Huataya;A;now();now();NULL;3
+29;Vilca;A;now();now();NULL;3
+30;Acasmayo;A;now();now();NULL;3
+31;Chincho;A;now();now();NULL;3
+32;Mataca;A;now();now();NULL;3
+33;Pte. Oscar Vargas A.;A;now();now();NULL;3
+34;Acos;A;now();now();NULL;3
+35;Comas;A;now();now();NULL;4
+36;Carabayllo;A;now();now();NULL;4
+37;Chocas;A;now();now();NULL;4
+38;Santo Domingo;A;now();now();NULL;4
+39;Trocha;A;now();now();NULL;4
+40;Leticia;A;now();now();NULL;4
+41;Puente Churin;A;now();now();NULL;4
+42;Callejon san Carlos;A;now();now();NULL;4
+43;Canta;A;now();now();NULL;4

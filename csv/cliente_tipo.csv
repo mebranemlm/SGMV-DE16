@@ -1,0 +1,4 @@
+clti_id;clti_nomb;clti_esta;audi_freg;audi_fact;user_id
+1;ESTADO - MTC;A;now();now();NULL
+2;EMPRESA PRIVADA - CONCESIONARIO;A;now();now();NULL
+3;EMPRESA PRIVADA - CONSORCIO;A;now();now();NULL
