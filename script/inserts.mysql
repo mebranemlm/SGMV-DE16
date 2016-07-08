@@ -1,0 +1,337 @@
+use db_serpentin0;
+
+#TABLA PERMISO
+delete from permiso;
+alter table permiso auto_increment =1;
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (1,'ACCIONES','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (2,'ACTIVIDADES','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (3,'CARGOS','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (4,'CLIENTES','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (5,'CÓDIGOS DE ELEMENTO','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (6,'ELEMENTOS','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (7,'CONTRATOS','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (8,'PERMISOS','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (9,'EMPLEADOS','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (10,'SECTORES','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (11,'TIPOS DE ACTIVIDAD','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (12,'TRAMOS','A',now(),now(),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (13,'USUARIOS','A',now(),now(),NULL);
+
+
+#TABLA ACCION
+delete from accion;
+alter table accion auto_increment =1;
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (1,'LISTAR','A',now(),now(),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (2,'BUSCAR','A',now(),now(),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (3,'IMPRIMIR REPORTES','A',now(),now(),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (4,'AGREGAR','A',now(),now(),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (5,'MODIFICAR','A',now(),now(),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (6,'ELIMINAR','A',now(),now(),NULL);
+
+#PERMISO_ACCION
+delete from permiso_accion;
+alter table permiso_accion auto_increment =1;
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (1,1,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (2,1,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (3,1,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (4,1,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (5,1,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (6,1,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (7,2,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (8,2,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (9,2,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (10,2,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (11,2,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (12,2,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (13,3,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (14,3,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (15,3,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (16,3,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (17,3,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (18,3,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (19,4,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (20,4,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (21,4,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (22,4,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (23,4,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (24,4,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (25,5,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (26,5,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (27,5,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (28,5,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (29,5,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (30,5,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (31,6,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (32,6,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (33,6,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (34,6,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (35,6,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (36,6,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (37,7,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (38,7,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (39,7,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (40,7,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (41,7,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (42,7,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (43,8,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (44,8,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (45,8,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (46,8,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (47,8,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (48,8,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (49,9,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (50,9,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (51,9,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (52,9,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (53,9,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (54,9,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (55,10,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (56,10,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (57,10,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (58,10,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (59,10,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (60,10,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (61,11,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (62,11,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (63,11,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (64,11,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (65,11,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (66,11,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (67,12,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (68,12,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (69,12,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (70,12,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (71,12,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (72,12,6,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (73,13,1,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (74,13,2,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (75,13,3,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (76,13,4,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (77,13,5,'A',now(),now(),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (78,13,6,'A',now(),now(),NULL);
+
+
+
+#TABLA CARGO
+delete from cargo;
+alter table cargo auto_increment =1;
+INSERT INTO cargo(carg_id,carg_nomb,carg_esta,audi_freg,audi_fact,user_id) VALUES (1,'ADMINISTRADOR','A',now(),now(),NULL);
+INSERT INTO cargo(carg_id,carg_nomb,carg_esta,audi_freg,audi_fact,user_id) VALUES (2,'GESTOR','A',now(),now(),NULL);
+INSERT INTO cargo(carg_id,carg_nomb,carg_esta,audi_freg,audi_fact,user_id) VALUES (3,'OBRERO','A',now(),now(),NULL);
+
+
+#PERSONAL
+
+insert into personal
+(pers_dni,pers_nomb,pers_apel,pers_fnac,
+pers_dire,pers_telf,pers_fing,pers_emai,
+pers_esta,pers_freg,pers_fact,carg_id)
+values
+('11111111','Pedro','Lopez',null,
+null,null,'2010-02-01',null,
+'A',now(),now(),3),
+('22222222','Juan','Perez',null,
+null,null,'2011-03-02',null,
+'A',now(),now(),1),
+('33333333','Roberto','Sosa',null,
+null,null,'2009-04-11',null,
+'A',now(),now(),2),
+('44444444','Personal 4','Apellido 4',null,
+null,null,'2010-02-01',null,
+'A',now(),now(),2),
+('55555555','Personal 5','Apellido 5',null,
+null,null,'2010-02-01',null,
+'A',now(),now(),3),
+('72727289','Personal6','Apellido 6',null,
+null,null,'2010-02-01',null,
+'A',now(),now(),3),
+('98238937','Personal7','Apellido 7',null,
+null,null,'2011-03-02',null,
+'A',now(),now(),1),
+('82798278','Personal8','Apellido 8',null,
+null,null,'2009-04-11',null,
+'A',now(),now(),2),
+('72892837','Personal9','Apellido 9',null,
+null,null,'2010-02-01',null,
+'A',now(),now(),2),
+('83839283','Personal10','Apellido 10',null,
+null,null,'2010-02-01',null,
+'A',now(),now(),2);
+
+#CARGO ACCION
+
+insert into cargo_accion
+(carg_id,acci_id,carg_acci_esta,audi_freg,audi_fact)
+values
+(1,1,'A',now(),now()),
+(1,2,'A',now(),now()),
+(1,3,'A',now(),now()),
+(1,4,'A',now(),now()),
+(1,5,'A',now(),now()),
+(1,6,'A',now(),now()),
+(1,7,'A',now(),now()),
+(1,8,'A',now(),now()),
+(1,9,'A',now(),now()),
+(1,10,'A',now(),now()),
+(1,11,'A',now(),now()),
+(1,12,'A',now(),now()),
+(1,13,'A',now(),now());
+
+#CLIENTE TIPO
+
+insert into cliente_tipo
+(clti_nomb,clti_esta,audi_freg,audi_fact)
+values
+('Cliente Tipo 1','A',now(),now()),
+('Cliente Tipo 2','A',now(),now()),
+('Cliente Tipo 3','A',now(),now());
+
+
+#CLIENTE
+
+insert into cliente
+(clie_ruc,clie_rsoc,clie_dire,clie_telf,
+clie_esta,clie_freg,clie_fact,clti_id)
+values
+('11111111111','R.S. 1',null,null,
+'A',now(),now(),1),
+('22222222222','R.S. 2',null,null,
+'A',now(),now(),1),
+('33333333333','R.S. 3',null,null,
+'A',now(),now(),1),
+('44444444444','R.S. 4',null,null,
+'A',now(),now(),1),
+('55555555555','R.S. 5',null,null,
+'A',now(),now(),1);
+
+
+#ELEMENTO
+
+insert into elemento
+(elem_desc,elem_esta,audi_freg,audi_fact)
+values
+('Elemento 1','A',now(),now()),
+('Elemento 2','A',now(),now()),
+('Elemento 3','A',now(),now()),
+('Elemento 4','A',now(),now()),
+('Elemento 5','A',now(),now()),
+('Elemento 6','A',now(),now()),
+('Elemento 7','A',now(),now()),
+('Elemento 8','A',now(),now()),
+('Elemento 9','A',now(),now()),
+('Elemento 10','A',now(),now()),
+('Elemento 11','A',now(),now()),
+('Elemento 12','A',now(),now()),
+('Elemento 13','A',now(),now()),
+('Elemento 14','A',now(),now()),
+('Elemento 15','A',now(),now()),
+('Elemento 16','A',now(),now()),
+('Elemento 17','A',now(),now()),
+('Elemento 18','A',now(),now()),
+('Elemento 19','A',now(),now()),
+('Elemento 20','A',now(),now());
+
+#CODIGO ELEMENTO
+
+insert into codigo_elemento
+(coel_codi,coel_esta,audi_freg,audi_fact,elem_id)
+values
+('CE001','A',now(),now(),1),
+('CE002','A',now(),now(),2),
+('CE003','A',now(),now(),3),
+('CE004','A',now(),now(),4),
+('CE005','A',now(),now(),5),
+('CE006','A',now(),now(),1),
+('CE007','A',now(),now(),2),
+('CE008','A',now(),now(),3),
+('CE009','A',now(),now(),4),
+('CE010','A',now(),now(),5),
+('CE011','A',now(),now(),6),
+('CE012','A',now(),now(),1),
+('CE013','A',now(),now(),2),
+('CE014','A',now(),now(),3),
+('CE015','A',now(),now(),4),
+('CE016','A',now(),now(),5),
+('CE017','A',now(),now(),6),
+('CE018','A',now(),now(),7),
+('CE019','A',now(),now(),1),
+('CE020','A',now(),now(),2),
+('CE021','A',now(),now(),3),
+('CE022','A',now(),now(),4),
+('CE023','A',now(),now(),5),
+('CE0024','A',now(),now(),6),
+('CE0025','A',now(),now(),7);
+
+
+#TRAMO
+
+insert into tramo
+(tram_nomb,tram_carr,tram_kini,tram_kfin,tram_ktot,
+tram_aper,tram_esta,tram_freg,tram_fact)
+values
+('Tramo 1','Carretera 1',1000,2000,1000,
+'Ape1','A',now(),now()),
+('Tramo 2','Carretera 2',2000,4000,2000,
+'Ape2','A',now(),now()),
+('Tramo 3','Carretera 3',3000,6000,3000,
+'Ape3','A',now(),now()),
+('Tramo 4','Carretera 4',2000,5000,3000,
+'Ape4','A',now(),now()),
+('Tramo 5','Carretera 5',1000,4000,3000,
+'Ape5','A',now(),now()),
+('Tramo 6','Carretera 6',3000,4000,1000,
+'Ape6','A',now(),now()),
+('Tramo 7','Carretera 7',1000,3000,2000,
+'Ape7','A',now(),now()),
+('Tramo 8','Carretera 8',4000,7000,3000,
+'Ape8','A',now(),now()),
+('Tramo 9','Carretera 9',1000,5000,4000,
+'Ape9','A',now(),now());
+
+#SECTOR
+
+insert into sector
+(sect_nomb,sect_esta,audi_freg,audi_fact,tram_id)
+values
+('Sector 1','A',now(),now(),1),
+('Sector 2','A',now(),now(),1),
+('Sector 3','A',now(),now(),1),
+('Sector 4','A',now(),now(),1),
+('Sector 5','A',now(),now(),1),
+
+('Sector 1','A',now(),now(),2),
+('Sector 2','A',now(),now(),2),
+('Sector 3','A',now(),now(),2),
+('Sector 4','A',now(),now(),2),
+('Sector 5','A',now(),now(),2),
+
+('Sector 1','A',now(),now(),3),
+('Sector 2','A',now(),now(),3),
+('Sector 3','A',now(),now(),3),
+('Sector 4','A',now(),now(),3),
+('Sector 5','A',now(),now(),3),
+
+('Sector 1','A',now(),now(),4),
+('Sector 2','A',now(),now(),4),
+('Sector 3','A',now(),now(),4),
+('Sector 4','A',now(),now(),4),
+('Sector 5','A',now(),now(),4),
+
+('Sector 1','A',now(),now(),5),
+('Sector 2','A',now(),now(),5),
+('Sector 3','A',now(),now(),5),
+('Sector 4','A',now(),now(),5),
+('Sector 5','A',now(),now(),5);
+
+#USUARIO
+
+insert into usuario
+(user_user,user_pass,user_esta,
+audi_freg,audi_fact,user_user_id,pers_id)
+values
+('admin',md5('admin'),'A',
+now(),now(),null,2),
+('usuario1',md5('11111'),'A',
+now(),now(),null,1),
+('usuario2',md5('22222'),'A',
+now(),now(),null,3);

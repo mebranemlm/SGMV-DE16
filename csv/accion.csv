@@ -1,0 +1,8 @@
+acci_id;acci_desc;acci_esta;audi_freg;audi_fact;user_id
+1;LISTAR;A;now();now();NULL
+2;BUSCAR;A;now();now();NULL
+3;IMPRIMIR REPORTES;A;now();now();NULL
+4;AGREGAR;A;now();now();NULL
+5;MODIFICAR;A;now();now();NULL
+6;ELIMINAR;A;now();now();NULL
+7;CONTROLAR;A;now();now();NULL

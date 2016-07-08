@@ -1,0 +1,14 @@
+perm_id;perm_desc;perm_esta;audi_freg;audi_fact;user_id
+1;ACCIONES;A;now();now();NULL
+2;ACTIVIDADES;A;now();now();NULL
+3;CARGOS;A;now();now();NULL
+4;CLIENTES;A;now();now();NULL
+5;CÓDIGOS DE ELEMENTO;A;now();now();NULL
+6;ELEMENTOS;A;now();now();NULL
+7;CONTRATOS;A;now();now();NULL
+8;PERMISOS;A;now();now();NULL
+9;EMPLEADOS;A;now();now();NULL
+10;SECTORES;A;now();now();NULL
+11;TIPOS DE ACTIVIDAD;A;now();now();NULL
+12;TRAMOS;A;now();now();NULL
+13;USUARIOS;A;now();now();NULL

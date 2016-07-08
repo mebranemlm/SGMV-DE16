@@ -1,0 +1,4 @@
+carg_id;carg_nomb;carg_esta;audi_freg;audi_fact;user_id
+1;ADMINISTRADOR;A;now();now();NULL
+2;GESTOR;A;now();now();NULL
+3;OBRERO;A;now();now();NULL
