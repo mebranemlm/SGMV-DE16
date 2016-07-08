@@ -1,0 +1,101 @@
+pers_id;pers_dni;pers_nomb;pers_apel;pers_fnac;pers_dire;pers_telf;pers_fing;pers_emai;pers_esta;audi_freg;audi_fact;user_id;carg_id
+1;11111111;Administrador;Administrador;1982-04-19;NULL;362-3915;2011-01-09;ut.eros.non@diamvelarcu.edu;A;now();now();NULL;1
+2;22222222;Gestor;Gestor;1986-06-23;NULL;1-966-279-6303;2010-04-23;augue@volutpatornare.com;A;now();now();NULL;2
+3;40185112;Honorina;Muñoz Molina;1981-06-06;NULL;1-341-124-9180;2014-10-13;dignissim.Maecenas@ipsumdolorsit.edu;A;now();now();NULL;3
+4;31980876;Marilyn Marlene;Arratia Rivas;1981-05-14;NULL;699-1278;2014-08-12;lorem@Suspendisse.net;A;now();now();NULL;3
+5;15022275;Francisco Segundo;Ascencio Vera;1989-04-06;NULL;331-7822;2015-02-19;dolor.nonummy@aliquam.co.uk;A;now();now();NULL;3
+6;34219303;Susana Angela;Mora Soutullo;1980-12-20;NULL;365-9972;2015-09-02;sapien.cursus@non.co.uk;A;now();now();NULL;3
+7;25970989;Bernarda del Carmen;Fonseca;1987-01-06;NULL;549-5792;2010-11-22;Cras.vehicula@consectetuereuismodest.co.uk;A;now();now();NULL;3
+8;14337900;Segundo Ramón;Paz Zambrano;1987-07-03;NULL;266-3920;2015-04-04;enim.sit.amet@nulla.com;A;now();now();NULL;3
+9;35034329;Flor Esilda;Bustos Riffo;1983-05-10;NULL;748-9046;2010-10-29;elit.Curabitur.sed@Donecdignissim.com;A;now();now();NULL;3
+10;10783659;Cecilia ;Gallardo Tapia;1982-02-23;NULL;297-8138;2010-04-03;in@idrisus.net;A;now();now();NULL;3
+11;20841981;Samuel Segundo;Alarcón Valdebenito;1983-11-22;NULL;1-705-503-7002;2013-02-05;at.velit.Pellentesque@enimEtiam.com;A;now();now();NULL;3
+12;7071665;Sonia Inés;Leal Leal;1983-01-13;NULL;1-315-645-0687;2011-11-19;at.egestas.a@tincidunt.org;A;now();now();NULL;3
+13;49208157;Lucila ;Aravena Hernandez;1989-12-16;NULL;717-2999;2011-04-15;ipsum.sodales.purus@leoinlobortis.co.uk;A;now();now();NULL;3
+14;14194092;Juan;Carrasco Vega;1982-09-05;NULL;1-589-609-9205;2015-01-18;Proin@eutelluseu.edu;A;now();now();NULL;3
+15;30079215;Maritza ;Lagos Oliva ;1987-09-22;NULL;912-9719;2015-12-08;gravida.sagittis@egestas.ca;A;now();now();NULL;3
+16;10047403;Irma Eliana;Recabal Silva;1986-12-11;NULL;1-517-637-5179;2012-08-10;habitant.morbi.tristique@sodalespurus.com;A;now();now();NULL;3
+17;48982803;José;Medina Cisternas;1989-01-07;NULL;612-1277;2011-12-08;Aliquam@vitaerisus.ca;A;now();now();NULL;3
+18;47098045;Rosa Eulalia;Vera Meli;1988-12-16;NULL;1-439-880-6001;2012-03-29;imperdiet@Morbiquis.edu;A;now();now();NULL;3
+19;37663604;Flilomena del Carmen;Loyola Cortéz;1988-03-12;NULL;605-2227;2010-10-08;vitae@temporarcuVestibulum.org;A;now();now();NULL;3
+20;23483477;Juan;Ramos Peña;1986-04-19;NULL;1-775-963-4889;2014-10-28;blandit.viverra.Donec@risusQuisque.com;A;now();now();NULL;3
+21;38938479;Edita;Salgado Ortiz;1987-10-04;NULL;1-485-466-4267;2014-03-01;odio.Aliquam@magnis.co.uk;A;now();now();NULL;3
+22;27354333;Rosa Elena;Romero benavente;1985-04-10;NULL;1-894-189-1428;2011-11-19;ornare.egestas@Suspendisse.org;A;now();now();NULL;3
+23;32082707;Ema del Carmen;Rocha saez;1987-04-01;NULL;373-9134;2010-04-04;at@MorbimetusVivamus.edu;A;now();now();NULL;3
+24;48319093;María Angélica;Martinez Aravena;1987-05-26;NULL;1-583-999-7870;2012-09-18;laoreet.libero.et@amagnaLorem.edu;A;now();now();NULL;3
+25;37474366;Heraldo;Cuevas Orellana;1986-12-01;NULL;779-4950;2013-01-26;sed.tortor@Vestibulumaccumsanneque.com;A;now();now();NULL;3
+26;24433736;Sergio;Ibañez Torres;1989-06-18;NULL;1-910-268-3351;2012-08-13;senectus.et@uteros.com;A;now();now();NULL;3
+27;21807253;Moises;Alarcón salazar;1983-01-20;NULL;546-8749;2012-07-05;Nullam.suscipit@nequevitaesemper.ca;A;now();now();NULL;3
+28;48488054;Graciela;Salazar Hermosilla;1984-01-30;NULL;1-271-281-9409;2011-01-25;mollis.vitae.posuere@sitamet.org;A;now();now();NULL;3
+29;48353334;José Maria;fierro Muñoz;1989-12-17;NULL;722-4096;2012-03-01;ac@sedestNunc.edu;A;now();now();NULL;3
+30;7732508;Magaly del Pilar;Rivera Retamal;1989-11-18;NULL;1-265-278-3209;2010-02-17;Morbi.quis.urna@milaciniamattis.org;A;now();now();NULL;3
+31;10553961;Hilda Ester;Contreras Pincheira;1985-05-12;NULL;682-2696;2013-06-29;dictum@vestibulumneque.com;A;now();now();NULL;3
+32;44127004;Juan Honorino ;Fredes Carrillo;1985-12-12;NULL;1-306-203-4539;2011-09-16;Cum.sociis.natoque@interdumfeugiat.org;A;now();now();NULL;3
+33;11283066;Leonardo Manuel;Carrasco Palma;1989-04-12;NULL;936-6131;2015-03-13;Donec@mienimcondimentum.com;A;now();now();NULL;3
+34;45428683;Marta;Faundez Baeza;1981-04-08;NULL;1-824-524-5761;2014-05-08;arcu@pede.ca;A;now();now();NULL;3
+35;44443522;Alejandra del Carmen;Contreras Rodriguez;1989-02-20;NULL;1-632-419-6893;2014-01-27;dictum@idnuncinterdum.ca;A;now();now();NULL;3
+36;21427403;Tania Angelica;Villar Cariaga;1980-05-06;NULL;1-785-855-5747;2010-04-11;arcu.Sed@sagittislobortismauris.ca;A;now();now();NULL;3
+37;42462203;Irene del Carmen;Aguilera Rivera;1982-08-27;NULL;1-461-919-3035;2015-04-26;interdum.Nunc.sollicitudin@elit.net;A;now();now();NULL;3
+38;46387778;Estela de Las Mercedes;Zapata Arriagada;1987-09-01;NULL;1-801-575-7295;2010-10-11;vitae@euismodacfermentum.org;A;now();now();NULL;3
+39;30152064;Roguers Alberto;Morales Navarrete;1985-03-10;NULL;1-684-318-0847;2012-01-15;Ut@accumsan.edu;A;now();now();NULL;3
+40;39672315;Maria margarita;Fuentealba vallejos;1985-05-04;NULL;746-3820;2014-09-01;Nunc@tellusSuspendisse.co.uk;A;now();now();NULL;3
+41;45107954;Julio ;Avila Friz;1981-12-04;NULL;528-9664;2012-03-24;eget@dolorNulla.ca;A;now();now();NULL;3
+42;5914794;Luis Ricardo;Faundez Retamal;1981-08-08;NULL;255-7816;2012-03-25;lorem@facilisisSuspendisse.edu;A;now();now();NULL;3
+43;35758108;Juan;Ortiz fuentealba;1984-02-04;NULL;916-7755;2011-09-08;vehicula.et.rutrum@iaculisquis.net;A;now();now();NULL;3
+44;42062729;Ana Mercedes;Perez Perez;1987-06-23;NULL;1-841-115-2927;2014-10-07;nec.imperdiet.nec@ipsumsodales.com;A;now();now();NULL;3
+45;50617492;Isolina Sofia;Castillo Molina;1983-05-19;NULL;1-106-121-6501;2014-12-26;nisi.magna.sed@tempusrisus.com;A;now();now();NULL;3
+46;42864784;Irma del Carmen;Díaz Ortiz;1981-11-01;NULL;998-7225;2011-07-26;Suspendisse@purusaccumsan.ca;A;now();now();NULL;3
+47;23290831;Maria del Carmen;Alarcon Pereira;1985-05-19;NULL;1-206-312-4441;2011-01-18;consequat.purus@rhoncusProinnisl.com;A;now();now();NULL;3
+48;32927300;Santos Alejandro;Altamirano Pinto;1981-06-19;NULL;1-474-426-8191;2012-12-12;Nulla@euturpis.ca;A;now();now();NULL;3
+49;46607416;Jose Eduardo;<<<<<<<<<<<<<<<<<<<;1986-05-27;NULL;1-301-149-9721;2014-02-27;tempor.erat.neque@hendreritaarcu.net;A;now();now();NULL;3
+50;38240073;Maria Ester ;Carrillo carrillo;1986-10-02;NULL;1-888-141-0423;2011-01-05;Suspendisse.dui.Fusce@non.org;A;now();now();NULL;3
+51;21845592;Celia del transito;Santibañez figueroa;1987-09-23;NULL;1-400-855-0545;2015-03-22;arcu.Curabitur@et.edu;A;now();now();NULL;3
+52;40880604;Mercedes del Carmen;Cuevas Manriquez;1985-08-10;NULL;1-360-165-8855;2015-09-14;malesuada.fringilla.est@erosnec.edu;A;now();now();NULL;3
+53;18432365;Roberto;Rivas Avello;1985-04-02;NULL;1-342-433-9389;2012-11-10;id.mollis@faucibusMorbi.edu;A;now();now();NULL;3
+54;8853983;Maria Ximena;Puga Wilson ;1988-04-02;NULL;782-4530;2011-06-20;et@enimnec.edu;A;now();now();NULL;3
+55;25413905;Patricia Uberlinda;Gutierrez Canales;1980-08-06;NULL;1-173-275-7929;2015-04-28;sit.amet.nulla@aaliquet.net;A;now();now();NULL;3
+56;25764501;Enrique;Pampaloni Siley;1980-08-23;NULL;1-442-360-1854;2013-09-03;ornare.egestas@vitaealiquetnec.net;A;now();now();NULL;3
+57;21151054;María Isabel;Saez Carrasco;1987-09-30;NULL;1-878-217-9972;2010-12-20;scelerisque@faucibusut.net;A;now();now();NULL;3
+58;27141590;Flor Marina;Peña Mendoza;1983-12-29;NULL;681-7382;2015-11-24;nunc@torquentper.com;A;now();now();NULL;3
+59;23444145;Mónica del Carmen;Martinez Carrera;1988-08-12;NULL;517-1419;2011-08-17;hendrerit.id.ante@Sedid.com;A;now();now();NULL;3
+60;16703108;Irma;Maldonado Montalba;1983-08-09;NULL;1-525-906-1834;2014-11-13;risus.at.fringilla@ut.org;A;now();now();NULL;3
+61;31690202;Juan Alberto;Lara Rios;1982-11-13;NULL;853-1048;2010-05-07;inceptos.hymenaeos.Mauris@semmollis.co.uk;A;now();now();NULL;3
+62;26338780;Fresia del Carmen;Trangulao Astorga;1987-04-14;NULL;721-2431;2014-10-29;Aliquam.rutrum@adipiscing.ca;A;now();now();NULL;3
+63;23720100;Irma del Carmen;Gallardo Toledo;1988-09-13;NULL;342-9357;2015-06-27;mauris.erat.eget@justo.edu;A;now();now();NULL;3
+64;24751648;Carlos Alberto;Rivera Retamal;1988-08-31;NULL;1-631-363-6132;2014-06-01;eu@idmollis.com;A;now();now();NULL;3
+65;28635428;Isabel Zunilda;Encina Bello;1986-06-03;NULL;983-6318;2015-04-21;auctor@Integerid.org;A;now();now();NULL;3
+66;14843466;Segundo Ruperto;Marín Rocha;1986-12-29;NULL;1-593-661-7672;2011-07-05;nisl.Quisque.fringilla@velquam.org;A;now();now();NULL;3
+67;37941904;Andrea Araceli;Vilalobos Villalobos;1989-11-27;NULL;1-805-492-6403;2010-04-22;Morbi.metus@ullamcorpernisl.net;A;now();now();NULL;3
+68;24931975;Pedro;Gonzalez Sanzana;1985-01-27;NULL;1-580-447-2712;2012-01-09;ipsum@Praesenteunulla.org;A;now();now();NULL;3
+69;45396350;Nicolas;Fierro Monsalvez;1982-06-22;NULL;531-1419;2015-12-19;aliquet.molestie@dictumeleifendnunc.com;A;now();now();NULL;3
+70;15851867;Maria Irma;Gonzalez contreras;1987-07-13;NULL;1-529-626-4338;2015-06-09;nonummy.ut@lacusUtnec.ca;A;now();now();NULL;3
+71;22943476;Uberlinda;Mella Arellano;1988-08-21;NULL;1-631-128-9644;2011-07-23;sem@ut.org;A;now();now();NULL;3
+72;36692917;Yenny;Pardo Perez;1981-10-19;NULL;1-199-439-8319;2013-08-31;metus.In@intempus.ca;A;now();now();NULL;3
+73;36169025;Basilia;Vasquez Rivera;1984-05-05;NULL;555-3049;2010-08-25;arcu.et@risusDuisa.com;A;now();now();NULL;3
+74;24305403;Juan Plinio;Hermosilla Contreras;1984-10-21;NULL;1-119-747-2099;2012-04-20;urna.justo@auctorullamcorpernisl.co.uk;A;now();now();NULL;3
+75;15506074;Julián;Matamala Escobar;1988-03-01;NULL;1-749-233-1268;2014-02-15;NULL;A;now();now();NULL;3
+76;22628716;Juan;Lara Rios;1982-07-21;NULL;136-5575;2013-10-17;enim@ridiculusmusProin.net;A;now();now();NULL;3
+77;14681399;Patricia Jeannette;Fernandez Martinez;1987-12-23;NULL;298-5136;2012-08-29;ornare.lectus.justo@sem.edu;A;now();now();NULL;3
+78;47858580;Ana Luisa;Lincura Boguen;1987-11-12;NULL;1-236-519-0752;2013-02-02;blandit.Nam@ullamcorpervelitin.com;A;now();now();NULL;3
+79;38652985;María Isabel;Hernandez López;1980-03-20;NULL;566-1392;2011-04-29;vulputate@eteuismod.co.uk;A;now();now();NULL;3
+80;16067242;Yasna Evelyn;Cuevas Flores;1982-12-06;NULL;1-855-738-1707;2015-03-30;sapien.Aenean.massa@enimnisl.edu;A;now();now();NULL;3
+81;39019635;Carlos Aladino;Carrasco Carrasco;1986-07-02;NULL;256-7534;2010-09-14;in.faucibus@velarcueu.ca;A;now();now();NULL;3
+82;22065106;José Luis;Flores Terán;1986-02-16;NULL;1-500-661-9649;2011-03-06;nisl.Nulla@gravidanonsollicitudin.co.uk;A;now();now();NULL;3
+83;30986665;Juan Bautista;Cuevas Orellana;1981-03-01;NULL;1-575-457-7162;2011-11-23;eu@convallis.com;A;now();now();NULL;3
+84;23733792;José Aquiles;Aguayo Chávez;1983-06-09;NULL;1-802-808-3747;2014-04-14;augue.eu.tempor@ut.edu;A;now();now();NULL;3
+85;12958811;Herminio;Ruiz Cuevas;1986-01-18;NULL;180-7740;2013-05-30;Vestibulum.ante.ipsum@sagittisfelis.edu;A;now();now();NULL;3
+86;12396133;Edina;Alarcón Salazar;1987-03-07;NULL;1-685-604-1417;2013-09-27;mauris.Integer@eros.com;A;now();now();NULL;3
+87;35661167;Ramón Segundo;Olivares Jerez;1982-12-28;NULL;648-3073;2015-03-28;malesuada@loremutaliquam.ca;A;now();now();NULL;3
+88;9861323;Patricio Segundo;Ancatrio Cruz;1986-11-11;NULL;128-8383;2011-05-05;et.pede@purusinmolestie.org;A;now();now();NULL;3
+89;13548148;Nilda;Meza Maldonado;1987-04-12;NULL;416-7258;2012-03-09;felis.Nulla@antelectusconvallis.edu;A;now();now();NULL;3
+90;50658705;María Cristina ;Biava  Gonzalez;1980-06-26;NULL;376-5350;2013-01-25;nascetur@Seddiamlorem.com;A;now();now();NULL;3
+91;33393544;Rigoberto;Caceres Monsalve;1982-10-13;NULL;265-2133;2015-05-15;Integer.urna@nonenim.net;A;now();now();NULL;3
+92;40311816;Pedro Segundo;Carrillo Claro;1985-04-03;NULL;1-842-277-2821;2014-06-03;vel.est@blanditenimconsequat.co.uk;A;now();now();NULL;3
+93;13405037;Segundo  ;Marin Concha;1981-11-01;NULL;535-4913;2012-01-15;Proin.ultrices@varius.org;A;now();now();NULL;3
+94;40014133;Mario;Escobar Navarro;1982-01-09;NULL;182-3833;2010-05-12;condimentum@imperdiet.ca;A;now();now();NULL;3
+95;9504092;Demesio del Tránsito;Gutierrez Navarro;1988-01-26;NULL;1-634-801-2891;2015-02-04;sagittis.lobortis.mauris@semNulla.org;A;now();now();NULL;3
+96;37356998;Carlos;Guerrero Miranda;1988-02-17;NULL;1-471-296-3173;2010-01-26;sapien@magnaCrasconvallis.ca;A;now();now();NULL;3
+97;38694145;Norma;hermosilla Sanhueza;1987-11-11;NULL;1-269-139-9023;2014-02-02;congue@facilisiSed.net;A;now();now();NULL;3
+98;5751633;Marcela Elizabeth;Espejo Valenzuela;1982-08-03;NULL;263-6087;2015-11-06;Fusce@tellus.net;A;now();now();NULL;3
+99;25031856;Teresa del Carmen;Guerrero Leal;1982-08-09;NULL;744-4384;2014-10-25;et.ultrices@elitpretiumet.com;A;now();now();NULL;3
+100;45286283;Maria Angelica;Román Ramos;1989-10-10;NULL;306-7437;2012-07-12;auctor@senectuset.com;A;now();now();NULL;3

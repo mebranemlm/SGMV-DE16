@@ -1,0 +1,498 @@
+use db_serpentin0;
+
+#1.TABLA PERMISO
+delete from permiso;
+alter table permiso auto_increment =1;
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (1,'ACCIONES','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (2,'ACTIVIDADES','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (3,'CARGOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (4,'CLIENTES','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (5,'CÓDIGOS DE ELEMENTO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (6,'ELEMENTOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (7,'CONTRATOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (8,'PERMISOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (9,'EMPLEADOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (10,'SECTORES','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (11,'TIPOS DE ACTIVIDAD','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (12,'TRAMOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso(perm_id,perm_desc,perm_esta,audi_freg,audi_fact,user_id) VALUES (13,'USUARIOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+
+
+#2.TABLA ACCION
+delete from accion;
+alter table accion auto_increment =1;
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (1,'LISTAR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (2,'BUSCAR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (3,'IMPRIMIR REPORTES','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (4,'AGREGAR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (5,'MODIFICAR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (6,'ELIMINAR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO accion(acci_id,acci_desc,acci_esta,audi_freg,audi_fact,user_id) VALUES (7,'CONTROLAR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+
+#3.PERMISO_ACCION
+delete from permiso_accion;
+alter table permiso_accion auto_increment =1;
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (1,1,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (2,1,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (3,1,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (4,1,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (5,1,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (6,1,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (7,2,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (8,2,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (9,2,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (10,2,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (11,2,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (12,2,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (13,3,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (14,3,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (15,3,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (16,3,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (17,3,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (18,3,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (19,4,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (20,4,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (21,4,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (22,4,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (23,4,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (24,4,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (25,5,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (26,5,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (27,5,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (28,5,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (29,5,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (30,5,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (31,6,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (32,6,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (33,6,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (34,6,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (35,6,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (36,6,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (37,7,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (38,7,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (39,7,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (40,7,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (41,7,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (42,7,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (43,8,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (44,8,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (45,8,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (46,8,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (47,8,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (48,8,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (49,9,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (50,9,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (51,9,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (52,9,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (53,9,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (54,9,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (55,10,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (56,10,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (57,10,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (58,10,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (59,10,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (60,10,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (61,11,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (62,11,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (63,11,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (64,11,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (65,11,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (66,11,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (67,12,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (68,12,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (69,12,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (70,12,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (71,12,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (72,12,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (73,13,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (74,13,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (75,13,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (76,13,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (77,13,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (78,13,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO permiso_accion(perm_acci_id,perm_id,acci_id,perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (79,2,7,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+
+
+#4.TABLA CARGO
+delete from cargo;
+alter table cargo auto_increment =1;
+INSERT INTO cargo(carg_id,carg_nomb,carg_esta,audi_freg,audi_fact,user_id) VALUES (1,'ADMINISTRADOR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo(carg_id,carg_nomb,carg_esta,audi_freg,audi_fact,user_id) VALUES (2,'GESTOR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo(carg_id,carg_nomb,carg_esta,audi_freg,audi_fact,user_id) VALUES (3,'OBRERO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+
+#5.TABLA CARGO_PERMISO_ACCION
+delete from cargo_permiso_accion;
+alter table cargo_permiso_accion auto_increment =1;
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (1,1,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (2,1,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (3,1,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (4,1,4,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (5,1,5,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (6,1,6,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (7,1,7,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (8,1,8,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (9,1,9,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (10,1,10,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (11,1,11,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (12,1,12,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (13,1,13,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (14,1,14,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (15,1,15,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (16,1,16,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (17,1,17,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (18,1,18,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (19,1,19,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (20,1,20,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (21,1,21,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (22,1,22,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (23,1,23,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (24,1,24,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (25,1,25,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (26,1,26,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (27,1,27,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (28,1,28,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (29,1,29,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (30,1,30,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (31,1,31,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (32,1,32,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (33,1,33,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (34,1,34,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (35,1,35,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (36,1,36,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (37,1,37,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (38,1,38,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (39,1,39,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (40,1,40,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (41,1,41,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (42,1,42,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (43,1,43,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (44,1,44,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (45,1,45,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (46,1,46,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (47,1,47,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (48,1,48,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (49,1,49,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (50,1,50,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (51,1,51,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (52,1,52,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (53,1,53,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (54,1,54,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (55,1,55,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (56,1,56,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (57,1,57,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (58,1,58,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (59,1,59,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (60,1,60,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (61,1,61,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (62,1,62,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (63,1,63,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (64,1,64,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (65,1,65,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (66,1,66,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (67,1,67,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (68,1,68,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (69,1,69,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (70,1,70,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (71,1,71,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (72,1,72,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (73,1,73,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (74,1,74,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (75,1,75,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (76,1,76,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (77,1,77,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (78,1,78,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (79,1,79,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (80,2,79,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (81,3,1,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (82,4,2,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (83,5,3,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (84,6,7,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (85,7,8,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (86,8,9,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (87,9,13,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (88,10,14,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (89,11,15,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (90,12,19,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (91,13,20,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (92,14,21,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (93,15,25,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (94,16,26,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (95,17,27,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (96,18,31,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (97,19,32,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (98,20,33,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (99,21,37,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (100,22,38,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (101,23,39,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (102,24,43,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (103,25,44,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (104,26,45,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (105,27,49,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (106,28,50,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (107,29,51,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (108,30,55,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (109,31,56,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (110,32,57,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (111,33,61,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (112,34,62,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (113,35,63,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (114,36,67,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (115,37,68,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (116,38,69,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (117,39,73,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (118,40,74,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO cargo_permiso_accion(carg_perm_acci_id,carg_id,perm_acci_id,carg_perm_acci_esta,audi_freg,audi_fact,user_id) VALUES (119,41,75,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+
+#6.TABLA PERSONAL
+delete from PERSONAL;
+alter table PERSONAL auto_increment =1;
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (1,11111111,'ADMINISTRADOR','ADMINISTRADOR','1982-04-19',NULL,'362-3915','2011-01-09','UT.EROS.NON@DIAMVELARCU.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (2,22222222,'GESTOR','GESTOR','1986-06-23',NULL,'1-966-279-6303','2010-04-23','AUGUE@VOLUTPATORNARE.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (3,40185112,'HONORINA','MUÑOZ MOLINA','1981-06-06',NULL,'1-341-124-9180','2014-10-13','DIGNISSIM.MAECENAS@IPSUMDOLORSIT.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (4,31980876,'MARILYN MARLENE','ARRATIA RIVAS','1981-05-14',NULL,'699-1278','2014-08-12','LOREM@SUSPENDISSE.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (5,15022275,'FRANCISCO SEGUNDO','ASCENCIO VERA','1989-04-06',NULL,'331-7822','2015-02-19','DOLOR.NONUMMY@ALIQUAM.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (6,34219303,'SUSANA ANGELA','MORA SOUTULLO','1980-12-20',NULL,'365-9972','2015-09-02','SAPIEN.CURSUS@NON.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (7,25970989,'BERNARDA DEL CARMEN','FONSECA','1987-01-06',NULL,'549-5792','2010-11-22','CRAS.VEHICULA@CONSECTETUEREUISMODEST.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (8,14337900,'SEGUNDO RAMÓN','PAZ ZAMBRANO','1987-07-03',NULL,'266-3920','2015-04-04','ENIM.SIT.AMET@NULLA.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (9,35034329,'FLOR ESILDA','BUSTOS RIFFO','1983-05-10',NULL,'748-9046','2010-10-29','ELIT.CURABITUR.SED@DONECDIGNISSIM.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (10,10783659,'CECILIA','GALLARDO TAPIA','1982-02-23',NULL,'297-8138','2010-04-03','IN@IDRISUS.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (11,20841981,'SAMUEL SEGUNDO','ALARCÓN VALDEBENITO','1983-11-22',NULL,'1-705-503-7002','2013-02-05','AT.VELIT.PELLENTESQUE@ENIMETIAM.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (12,7071665,'SONIA INÉS','LEAL LEAL','1983-01-13',NULL,'1-315-645-0687','2011-11-19','AT.EGESTAS.A@TINCIDUNT.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (13,49208157,'LUCILA','ARAVENA HERNANDEZ','1989-12-16',NULL,'717-2999','2011-04-15','IPSUM.SODALES.PURUS@LEOINLOBORTIS.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (14,14194092,'JUAN','CARRASCO VEGA','1982-09-05',NULL,'1-589-609-9205','2015-01-18','PROIN@EUTELLUSEU.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (15,30079215,'MARITZA','LAGOS OLIVA','1987-09-22',NULL,'912-9719','2015-12-08','GRAVIDA.SAGITTIS@EGESTAS.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (16,10047403,'IRMA ELIANA','RECABAL SILVA','1986-12-11',NULL,'1-517-637-5179','2012-08-10','HABITANT.MORBI.TRISTIQUE@SODALESPURUS.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (17,48982803,'JOSÉ','MEDINA CISTERNAS','1989-01-07',NULL,'612-1277','2011-12-08','ALIQUAM@VITAERISUS.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (18,47098045,'ROSA EULALIA','VERA MELI','1988-12-16',NULL,'1-439-880-6001','2012-03-29','IMPERDIET@MORBIQUIS.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (19,37663604,'FLILOMENA DEL CARMEN','LOYOLA CORTÉZ','1988-03-12',NULL,'605-2227','2010-10-08','VITAE@TEMPORARCUVESTIBULUM.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (20,23483477,'JUAN','RAMOS PEÑA','1986-04-19',NULL,'1-775-963-4889','2014-10-28','BLANDIT.VIVERRA.DONEC@RISUSQUISQUE.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (21,38938479,'EDITA','SALGADO ORTIZ','1987-10-04',NULL,'1-485-466-4267','2014-03-01','ODIO.ALIQUAM@MAGNIS.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (22,27354333,'ROSA ELENA','ROMERO BENAVENTE','1985-04-10',NULL,'1-894-189-1428','2011-11-19','ORNARE.EGESTAS@SUSPENDISSE.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (23,32082707,'EMA DEL CARMEN','ROCHA SAEZ','1987-04-01',NULL,'373-9134','2010-04-04','AT@MORBIMETUSVIVAMUS.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (24,48319093,'MARÍA ANGÉLICA','MARTINEZ ARAVENA','1987-05-26',NULL,'1-583-999-7870','2012-09-18','LAOREET.LIBERO.ET@AMAGNALOREM.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (25,37474366,'HERALDO','CUEVAS ORELLANA','1986-12-01',NULL,'779-4950','2013-01-26','SED.TORTOR@VESTIBULUMACCUMSANNEQUE.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (26,24433736,'SERGIO','IBAÑEZ TORRES','1989-06-18',NULL,'1-910-268-3351','2012-08-13','SENECTUS.ET@UTEROS.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (27,21807253,'MOISES','ALARCÓN SALAZAR','1983-01-20',NULL,'546-8749','2012-07-05','NULLAM.SUSCIPIT@NEQUEVITAESEMPER.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (28,48488054,'GRACIELA','SALAZAR HERMOSILLA','1984-01-30',NULL,'1-271-281-9409','2011-01-25','MOLLIS.VITAE.POSUERE@SITAMET.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (29,48353334,'JOSÉ MARIA','FIERRO MUÑOZ','1989-12-17',NULL,'722-4096','2012-03-01','AC@SEDESTNUNC.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (30,7732508,'MAGALY DEL PILAR','RIVERA RETAMAL','1989-11-18',NULL,'1-265-278-3209','2010-02-17','MORBI.QUIS.URNA@MILACINIAMATTIS.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (31,10553961,'HILDA ESTER','CONTRERAS PINCHEIRA','1985-05-12',NULL,'682-2696','2013-06-29','DICTUM@VESTIBULUMNEQUE.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (32,44127004,'JUAN HONORINO','FREDES CARRILLO','1985-12-12',NULL,'1-306-203-4539','2011-09-16','CUM.SOCIIS.NATOQUE@INTERDUMFEUGIAT.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (33,11283066,'LEONARDO MANUEL','CARRASCO PALMA','1989-04-12',NULL,'936-6131','2015-03-13','DONEC@MIENIMCONDIMENTUM.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (34,45428683,'MARTA','FAUNDEZ BAEZA','1981-04-08',NULL,'1-824-524-5761','2014-05-08','ARCU@PEDE.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (35,44443522,'ALEJANDRA DEL CARMEN','CONTRERAS RODRIGUEZ','1989-02-20',NULL,'1-632-419-6893','2014-01-27','DICTUM@IDNUNCINTERDUM.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (36,21427403,'TANIA ANGELICA','VILLAR CARIAGA','1980-05-06',NULL,'1-785-855-5747','2010-04-11','ARCU.SED@SAGITTISLOBORTISMAURIS.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (37,42462203,'IRENE DEL CARMEN','AGUILERA RIVERA','1982-08-27',NULL,'1-461-919-3035','2015-04-26','INTERDUM.NUNC.SOLLICITUDIN@ELIT.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (38,46387778,'ESTELA DE LAS MERCEDES','ZAPATA ARRIAGADA','1987-09-01',NULL,'1-801-575-7295','2010-10-11','VITAE@EUISMODACFERMENTUM.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (39,30152064,'ROGUERS ALBERTO','MORALES NAVARRETE','1985-03-10',NULL,'1-684-318-0847','2012-01-15','UT@ACCUMSAN.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (40,39672315,'MARIA MARGARITA','FUENTEALBA VALLEJOS','1985-05-04',NULL,'746-3820','2014-09-01','NUNC@TELLUSSUSPENDISSE.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (41,45107954,'JULIO','AVILA FRIZ','1981-12-04',NULL,'528-9664','2012-03-24','EGET@DOLORNULLA.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (42,5914794,'LUIS RICARDO','FAUNDEZ RETAMAL','1981-08-08',NULL,'255-7816','2012-03-25','LOREM@FACILISISSUSPENDISSE.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (43,35758108,'JUAN','ORTIZ FUENTEALBA','1984-02-04',NULL,'916-7755','2011-09-08','VEHICULA.ET.RUTRUM@IACULISQUIS.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (44,42062729,'ANA MERCEDES','PEREZ PEREZ','1987-06-23',NULL,'1-841-115-2927','2014-10-07','NEC.IMPERDIET.NEC@IPSUMSODALES.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (45,50617492,'ISOLINA SOFIA','CASTILLO MOLINA','1983-05-19',NULL,'1-106-121-6501','2014-12-26','NISI.MAGNA.SED@TEMPUSRISUS.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (46,42864784,'IRMA DEL CARMEN','DÍAZ ORTIZ','1981-11-01',NULL,'998-7225','2011-07-26','SUSPENDISSE@PURUSACCUMSAN.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (47,23290831,'MARIA DEL CARMEN','ALARCON PEREIRA','1985-05-19',NULL,'1-206-312-4441','2011-01-18','CONSEQUAT.PURUS@RHONCUSPROINNISL.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (48,32927300,'SANTOS ALEJANDRO','ALTAMIRANO PINTO','1981-06-19',NULL,'1-474-426-8191','2012-12-12','NULLA@EUTURPIS.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (49,46607416,'JOSE EDUARDO','<<<<<<<<<<<<<<<<<<<','1986-05-27',NULL,'1-301-149-9721','2014-02-27','TEMPOR.ERAT.NEQUE@HENDRERITAARCU.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (50,38240073,'MARIA ESTER','CARRILLO CARRILLO','1986-10-02',NULL,'1-888-141-0423','2011-01-05','SUSPENDISSE.DUI.FUSCE@NON.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (51,21845592,'CELIA DEL TRANSITO','SANTIBAÑEZ FIGUEROA','1987-09-23',NULL,'1-400-855-0545','2015-03-22','ARCU.CURABITUR@ET.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (52,40880604,'MERCEDES DEL CARMEN','CUEVAS MANRIQUEZ','1985-08-10',NULL,'1-360-165-8855','2015-09-14','MALESUADA.FRINGILLA.EST@EROSNEC.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (53,18432365,'ROBERTO','RIVAS AVELLO','1985-04-02',NULL,'1-342-433-9389','2012-11-10','ID.MOLLIS@FAUCIBUSMORBI.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (54,8853983,'MARIA XIMENA','PUGA WILSON','1988-04-02',NULL,'782-4530','2011-06-20','ET@ENIMNEC.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (55,25413905,'PATRICIA UBERLINDA','GUTIERREZ CANALES','1980-08-06',NULL,'1-173-275-7929','2015-04-28','SIT.AMET.NULLA@AALIQUET.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (56,25764501,'ENRIQUE','PAMPALONI SILEY','1980-08-23',NULL,'1-442-360-1854','2013-09-03','ORNARE.EGESTAS@VITAEALIQUETNEC.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (57,21151054,'MARÍA ISABEL','SAEZ CARRASCO','1987-09-30',NULL,'1-878-217-9972','2010-12-20','SCELERISQUE@FAUCIBUSUT.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (58,27141590,'FLOR MARINA','PEÑA MENDOZA','1983-12-29',NULL,'681-7382','2015-11-24','NUNC@TORQUENTPER.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (59,23444145,'MÓNICA DEL CARMEN','MARTINEZ CARRERA','1988-08-12',NULL,'517-1419','2011-08-17','HENDRERIT.ID.ANTE@SEDID.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (60,16703108,'IRMA','MALDONADO MONTALBA','1983-08-09',NULL,'1-525-906-1834','2014-11-13','RISUS.AT.FRINGILLA@UT.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (61,31690202,'JUAN ALBERTO','LARA RIOS','1982-11-13',NULL,'853-1048','2010-05-07','INCEPTOS.HYMENAEOS.MAURIS@SEMMOLLIS.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (62,26338780,'FRESIA DEL CARMEN','TRANGULAO ASTORGA','1987-04-14',NULL,'721-2431','2014-10-29','ALIQUAM.RUTRUM@ADIPISCING.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (63,23720100,'IRMA DEL CARMEN','GALLARDO TOLEDO','1988-09-13',NULL,'342-9357','2015-06-27','MAURIS.ERAT.EGET@JUSTO.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (64,24751648,'CARLOS ALBERTO','RIVERA RETAMAL','1988-08-31',NULL,'1-631-363-6132','2014-06-01','EU@IDMOLLIS.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (65,28635428,'ISABEL ZUNILDA','ENCINA BELLO','1986-06-03',NULL,'983-6318','2015-04-21','AUCTOR@INTEGERID.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (66,14843466,'SEGUNDO RUPERTO','MARÍN ROCHA','1986-12-29',NULL,'1-593-661-7672','2011-07-05','NISL.QUISQUE.FRINGILLA@VELQUAM.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (67,37941904,'ANDREA ARACELI','VILALOBOS VILLALOBOS','1989-11-27',NULL,'1-805-492-6403','2010-04-22','MORBI.METUS@ULLAMCORPERNISL.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (68,24931975,'PEDRO','GONZALEZ SANZANA','1985-01-27',NULL,'1-580-447-2712','2012-01-09','IPSUM@PRAESENTEUNULLA.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (69,45396350,'NICOLAS','FIERRO MONSALVEZ','1982-06-22',NULL,'531-1419','2015-12-19','ALIQUET.MOLESTIE@DICTUMELEIFENDNUNC.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (70,15851867,'MARIA IRMA','GONZALEZ CONTRERAS','1987-07-13',NULL,'1-529-626-4338','2015-06-09','NONUMMY.UT@LACUSUTNEC.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (71,22943476,'UBERLINDA','MELLA ARELLANO','1988-08-21',NULL,'1-631-128-9644','2011-07-23','SEM@UT.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (72,36692917,'YENNY','PARDO PEREZ','1981-10-19',NULL,'1-199-439-8319','2013-08-31','METUS.IN@INTEMPUS.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (73,36169025,'BASILIA','VASQUEZ RIVERA','1984-05-05',NULL,'555-3049','2010-08-25','ARCU.ET@RISUSDUISA.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (74,24305403,'JUAN PLINIO','HERMOSILLA CONTRERAS','1984-10-21',NULL,'1-119-747-2099','2012-04-20','URNA.JUSTO@AUCTORULLAMCORPERNISL.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (75,15506074,'JULIÁN','MATAMALA ESCOBAR','1988-03-01',NULL,'1-749-233-1268','2014-02-15','TRISTIQUE.AC.ELEIFEND@FERMENTUMARCUVESTIBULUM.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (76,22628716,'JUAN','LARA RIOS','1982-07-21',NULL,'136-5575','2013-10-17','ENIM@RIDICULUSMUSPROIN.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (77,14681399,'PATRICIA JEANNETTE','FERNANDEZ MARTINEZ','1987-12-23',NULL,'298-5136','2012-08-29','ORNARE.LECTUS.JUSTO@SEM.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (78,47858580,'ANA LUISA','LINCURA BOGUEN','1987-11-12',NULL,'1-236-519-0752','2013-02-02','BLANDIT.NAM@ULLAMCORPERVELITIN.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (79,38652985,'MARÍA ISABEL','HERNANDEZ LÓPEZ','1980-03-20',NULL,'566-1392','2011-04-29','VULPUTATE@ETEUISMOD.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (80,16067242,'YASNA EVELYN','CUEVAS FLORES','1982-12-06',NULL,'1-855-738-1707','2015-03-30','SAPIEN.AENEAN.MASSA@ENIMNISL.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (81,39019635,'CARLOS ALADINO','CARRASCO CARRASCO','1986-07-02',NULL,'256-7534','2010-09-14','IN.FAUCIBUS@VELARCUEU.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (82,22065106,'JOSÉ LUIS','FLORES TERÁN','1986-02-16',NULL,'1-500-661-9649','2011-03-06','NISL.NULLA@GRAVIDANONSOLLICITUDIN.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (83,30986665,'JUAN BAUTISTA','CUEVAS ORELLANA','1981-03-01',NULL,'1-575-457-7162','2011-11-23','EU@CONVALLIS.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (84,23733792,'JOSÉ AQUILES','AGUAYO CHÁVEZ','1983-06-09',NULL,'1-802-808-3747','2014-04-14','AUGUE.EU.TEMPOR@UT.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (85,12958811,'HERMINIO','RUIZ CUEVAS','1986-01-18',NULL,'180-7740','2013-05-30','VESTIBULUM.ANTE.IPSUM@SAGITTISFELIS.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (86,12396133,'EDINA','ALARCÓN SALAZAR','1987-03-07',NULL,'1-685-604-1417','2013-09-27','MAURIS.INTEGER@EROS.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (87,35661167,'RAMÓN SEGUNDO','OLIVARES JEREZ','1982-12-28',NULL,'648-3073','2015-03-28','MALESUADA@LOREMUTALIQUAM.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (88,9861323,'PATRICIO SEGUNDO','ANCATRIO CRUZ','1986-11-11',NULL,'128-8383','2011-05-05','ET.PEDE@PURUSINMOLESTIE.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (89,13548148,'NILDA','MEZA MALDONADO','1987-04-12',NULL,'416-7258','2012-03-09','FELIS.NULLA@ANTELECTUSCONVALLIS.EDU','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (90,50658705,'MARÍA CRISTINA','BIAVA  GONZALEZ','1980-06-26',NULL,'376-5350','2013-01-25','NASCETUR@SEDDIAMLOREM.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (91,33393544,'RIGOBERTO','CACERES MONSALVE','1982-10-13',NULL,'265-2133','2015-05-15','INTEGER.URNA@NONENIM.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (92,40311816,'PEDRO SEGUNDO','CARRILLO CLARO','1985-04-03',NULL,'1-842-277-2821','2014-06-03','VEL.EST@BLANDITENIMCONSEQUAT.CO.UK','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (93,13405037,'SEGUNDO','MARIN CONCHA','1981-11-01',NULL,'535-4913','2012-01-15','PROIN.ULTRICES@VARIUS.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (94,40014133,'MARIO','ESCOBAR NAVARRO','1982-01-09',NULL,'182-3833','2010-05-12','CONDIMENTUM@IMPERDIET.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (95,9504092,'DEMESIO DEL TRÁNSITO','GUTIERREZ NAVARRO','1988-01-26',NULL,'1-634-801-2891','2015-02-04','SAGITTIS.LOBORTIS.MAURIS@SEMNULLA.ORG','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (96,37356998,'CARLOS','GUERRERO MIRANDA','1988-02-17',NULL,'1-471-296-3173','2010-01-26','SAPIEN@MAGNACRASCONVALLIS.CA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (97,38694145,'NORMA','HERMOSILLA SANHUEZA','1987-11-11',NULL,'1-269-139-9023','2014-02-02','CONGUE@FACILISISED.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (98,5751633,'MARCELA ELIZABETH','ESPEJO VALENZUELA','1982-08-03',NULL,'263-6087','2015-11-06','FUSCE@TELLUS.NET','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (99,25031856,'TERESA DEL CARMEN','GUERRERO LEAL','1982-08-09',NULL,'744-4384','2014-10-25','ET.ULTRICES@ELITPRETIUMET.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO PERSONAL(pers_id,pers_dni,pers_nomb,pers_apel,pers_fnac,pers_dire,pers_telf,pers_fing,pers_emai,perm_esta,audi_freg,audi_fact,user_id,carg_id) VALUES (100,45286283,'MARIA ANGELICA','ROMÁN RAMOS','1989-10-10',NULL,'306-7437','2012-07-12','AUCTOR@SENECTUSET.COM','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+
+
+#7.TABLA USUARIO
+delete from USUARIO;
+alter table USUARIO auto_increment =1;
+INSERT INTO USUARIO(user_id,user_user,user_pass,user_esta,audi_freg,audi_fact,user_user_id,pers_id) VALUES (1,'ADMIN','ADMIN','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO USUARIO(user_id,user_user,user_pass,user_esta,audi_freg,audi_fact,user_user_id,pers_id) VALUES (2,'GESTOR','GESTOR','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+
+#8.TABLA TRAMO
+delete from TRAMO;
+alter table TRAMO auto_increment =1;
+INSERT INTO TRAMO(tram_id,tram_nomb,tram_carr,tram_kini,tram_kfin,tram_ktot,tram_aper,tram_esta,audi_freg,audi_fact,user_id) VALUES (1,'OV. CHANCAY - HUARAL','CHANCAY - HUARAL',0,8770,8770,NULL,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO TRAMO(tram_id,tram_nomb,tram_carr,tram_kini,tram_kfin,tram_ktot,tram_aper,tram_esta,audi_freg,audi_fact,user_id) VALUES (2,'DV. VTE. PASAMAYO - HUARAL','VARIANTE - HUARAL',0,11070,11070,NULL,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO TRAMO(tram_id,tram_nomb,tram_carr,tram_kini,tram_kfin,tram_ktot,tram_aper,tram_esta,audi_freg,audi_fact,user_id) VALUES (3,'HUARAL - HUARAL','HUARAL - ACOS',0,55520,55520,NULL,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO TRAMO(tram_id,tram_nomb,tram_carr,tram_kini,tram_kfin,tram_ktot,tram_aper,tram_esta,audi_freg,audi_fact,user_id) VALUES (4,'LIMA - CANTA','LIMA - LETICIA - CANTA',25000,189500,164500,NULL,'A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+
+
+#9.TABLA SECTOR
+delete from SECTOR;
+alter table SECTOR auto_increment =1;
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (1,'OV. CHANCAY','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (2,'LOS TILOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (3,'TORRE BLANCA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (4,'LECHÓN DORADO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (5,'QUEPEPAMPA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (6,'CURVA ZAPATA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (7,'DONOSO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (8,'CURVA ESQUIVEL','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (9,'HUARAL','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (10,'DV. VARIANTE PASAMAYO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (11,'AUCALLAMA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (12,'PUENTE CHANCAY','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (13,'SAN CRISTOBAL','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (14,'MACATÓN','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (15,'BOZA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (16,'LA HUACA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (17,'JESUS DEL VALLE','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (18,'HUARAL','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (19,'ESPERANZA BAJA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (20,'ESPERANZA ALTA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (21,'SECTOR TRES','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (22,'HORNILLOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (23,'CUYO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (24,'LUMBRA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (25,'SANTO DOMINGO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (26,'SAN MIGUEL','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (27,'TOTORAL','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (28,'HUATAYA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (29,'VILCA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (30,'ACASMAYO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (31,'CHINCHO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (32,'MATACA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (33,'PTE. OSCAR VARGAS A.','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (34,'ACOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,3);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (35,'COMAS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (36,'CARABAYLLO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (37,'CHOCAS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (38,'SANTO DOMINGO','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (39,'TROCHA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (40,'LETICIA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (41,'PUENTE CHURIN','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (42,'CALLEJON SAN CARLOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+INSERT INTO SECTOR(sect_id,sect_nomb,sect_esta,audi_freg,audi_fact,user_id,tram_id) VALUES (43,'CANTA','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,4);
+
+
+#10.TABLA ELEMENTO
+delete from ELEMENTO;
+alter table ELEMENTO auto_increment =1;
+INSERT INTO ELEMENTO(elem_id,elem_desc,elem_esta,audi_freg,audi_fact,user_id) VALUES (1,'SEÑALIZACIÓN VERTICAL','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+INSERT INTO ELEMENTO(elem_id,elem_desc,elem_esta,audi_freg,audi_fact,user_id) VALUES (2,'POSTES KILOMÉTRICOS','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL);
+
+
+#11.TABLA CODIGO_ELEMENTO
+delete from CODIGO_ELEMENTO;
+alter table CODIGO_ELEMENTO auto_increment =1;
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (1,'P-1A','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (2,'P-1A-I','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (3,'P-1B','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (4,'P-1B-I','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (5,'P-2A','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (6,'P-2B','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (7,'P-4A','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (8,'P-4B','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (9,'P-4B-D','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (10,'P-5-1','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (11,'P-14-A','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (12,'P-14-B','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (13,'P-15','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (14,'P-18','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (15,'P-22','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (16,'P-33','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (17,'P-48','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (18,'P-49','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (19,'P-54','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (20,'P-56','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (21,'R-1','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (22,'R-2','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (23,'R-4','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (24,'R-5','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (25,'R-7','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (26,'R-10','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (27,'R-15','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (28,'R-16','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (29,'R-30','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (30,'R-30-4','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (31,'I-2','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (32,'I-5','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (33,'I-18','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (34,'I-20','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (35,'I-23','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (36,'I-34','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,1);
+INSERT INTO CODIGO_ELEMENTO(coel_id,coel_codi,coel_esta,audi_freg,audi_fact,user_id,elem_id) VALUES (37,'I8','A',REPLACE('NOW()','NOW()',now()),REPLACE('NOW()','NOW()',now()),NULL,2);
+
+
+#12.TABLA TIPO_ACTIVIDAD
+delete from TIPO_ACTIVIDAD;
+alter table TIPO_ACTIVIDAD auto_increment =1;
+
+#13.TABLA ACTIVIDAD
+delete from ACTIVIDAD;
+alter table ACTIVIDAD auto_increment =1;
+
+#14.TABLA TRAMO_CODIGO_ELEMENTO
+delete from TRAMO_CODIGO_ELEMENTO;
+alter table TRAMO_CODIGO_ELEMENTO auto_increment =1;
+
+#15.TABLA CLIENTE_TIPO
+delete from CLIENTE_TIPO;
+alter table CLIENTE_TIPO auto_increment =1;
+
+#16.TABLA CLIENTE
+delete from CLIENTE;
+alter table CLIENTE auto_increment =1;
+
+#17.TABLA CONTRATO
+delete from CONTRATO;
+alter table CONTRATO auto_increment =1;
+
+#18.TABLA CONTRATO_TRAMO
+delete from CONTRATO_TRAMO;
+alter table CONTRATO_TRAMO auto_increment =1;
+
+#19.TABLA CONTRATO_TRAMO_ACTIVIDAD
+delete from CONTRATO_TRAMO_ACTIVIDAD;
+alter table CONTRATO_TRAMO_ACTIVIDAD auto_increment =1;
+
+#20.TABLA CONTRATO_TRAMO_PERSONAL
+delete from CONTRATO_TRAMO_PERSONAL;
+alter table CONTRATO_TRAMO_PERSONAL auto_increment =1;
+

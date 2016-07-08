@@ -1,0 +1,3 @@
+cont_tram_pers_id;cont_tram_id; pers_id;cont_tram_pers_esta;audi_freg;audi_fact;user_id
+1;1;1;A;now();now();NULL
+2;1;2;A;now();now();NULL

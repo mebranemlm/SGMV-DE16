@@ -1,0 +1,5 @@
+tram_id;tram_nomb;tram_carr;tram_kini;tram_kfin;tram_ktot;tram_aper;tram_esta;audi_freg;audi_fact;user_id
+1;OV. CHANCAY - HUARAL;CHANCAY - HUARAL;0;8770;8770;NULL;A;now();now();NULL
+2;DV. VTE. PASAMAYO - HUARAL;VARIANTE - HUARAL;0;11070;11070;NULL;A;now();now();NULL
+3;HUARAL - HUARAL;HUARAL - ACOS;0;55520;55520;NULL;A;now();now();NULL
+4;LIMA - CANTA;LIMA - LETICIA - CANTA;25000;189500;164500;NULL;A;now();now();NULL
